@@ -6,7 +6,8 @@ pipeline {
             steps {
                 script {
                     echo 'Building C++ Project...'
-                    sh 'g++ -o PES2UG22CS490-1 main.cpp'
+                    sh 'g++ -o PES2UG22CS490 nonexistent_file.cpp'
+
                 }
             }
         }
@@ -15,7 +16,7 @@ pipeline {
             steps {
                 script {
                     echo 'Running Tests...'
-                    sh './PES2UG22CS490-1'
+                    sh './PES2UG22CS490'
                 }
             }
         }
