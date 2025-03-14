@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     echo 'Building C++ Project...'
-                    sh 'g++ -o PES2UG22CS490 main.cpp'  // Compiling main.cpp to PES2UG22CS490
+                    sh 'g++ -o PES2UG22CS490-1 main.cpp'
                 }
             }
         }
@@ -15,7 +15,7 @@ pipeline {
             steps {
                 script {
                     echo 'Running Tests...'
-                    sh './PES2UG22CS490'  // Running the compiled file
+                    sh './PES2UG22CS490-1'
                 }
             }
         }
@@ -36,3 +36,4 @@ pipeline {
         }
     }
 }
+
